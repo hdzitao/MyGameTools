@@ -1,0 +1,18 @@
+﻿<Window x:Class="RedDeadOnlineCustomRoom.EditRoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RedDeadOnlineCustomRoom"
+        mc:Ignorable="d"
+        Title="编辑房间" Height="150" Width="240">
+    <Grid>
+        <Label Content="房间名：" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="房间ID：" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="roomNameTextBox" HorizontalAlignment="Left" Margin="70,14,0,0" VerticalAlignment="Top" Width="120" MaxLength="10"/>
+        <TextBox x:Name="roomIdTextBox" HorizontalAlignment="Left" Margin="70,44,0,0" VerticalAlignment="Top" Width="120" MaxLength="12"/>
+        <Button Content="确定" HorizontalAlignment="Left" Margin="130,75,0,0" VerticalAlignment="Top" Width="60" Height="20" Click="Button_Save"/>
+        <Button x:Name="configButton" Content="自定义" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="60" Height="20" Click="Button_Config"/>
+
+    </Grid>
+</Window>
